@@ -1,0 +1,258 @@
+
+<!--    <style>-->
+<!--        body{-->
+<!--            background:#ddd;-->
+<!--        }-->
+<!--        .profile-area{-->
+<!--            padding:80px 0;-->
+<!--        }-->
+<!--        .card{-->
+<!--            box-shadow:0 0 30px rgba(0,0,0,0.5);-->
+<!--            overflow:hidden;-->
+<!--            border-radius:15px;-->
+<!--        }-->
+<!--        .img1 img{-->
+<!--            height:200px;-->
+<!--            border -top-right-radius:15px;-->
+<!--            border -top-left-radius:15px;-->
+<!--            width:100px;-->
+<!--        }-->
+<!--        a{-->
+<!--            color:white;-->
+<!--        }-->
+<!--    </style>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--    <script src="https://kit.fontawesome.com/6de89423e0.js" crossorigin="anonymous"></script>-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash;NAVBAR&ndash;&gt;-->
+<!--<div class="collapse" id="navbarToggleExternalContent">-->
+<!--  <div class="bg-danger p-4">-->
+<!--    <h5 class="text-white h4"><a href="#">Add to cart<i class="fa-sharp fa-solid fa-cart-shopping"></i></a></h5>-->
+<!--    <h5 class="text-white h4">Wish List<i class="fa-regular fa-heart"></i></h5>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<nav class="navbar navbar-dark bg-secondary">-->
+<!--  <div class="container-fluid">-->
+<!--    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--      <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+<!--  </div>-->
+<!--</nav>-->
+
+
+<!--    <div class="profile-area">-->
+<!--       <div class="container">-->
+<!--           <div class="row">-->
+<!--               <div class="col-md-4">-->
+<!--                   <div class="card">-->
+<!--                       <div class="img1"><img src="baby_boy_drs_1.jpg" alt=""></div>-->
+<!--                       <div class="img2"><img src="baby_gl_dress.jpg" alt=""></div>-->
+<!--                       <div class="main-text">-->
+<!--                           <a href="#"> View Products</a>-->
+<!--                       </div>-->
+<!--                       <div class="socials">-->
+<!--                           <i class="fa-sharp fa-solid fa-eye"></i>-->
+<!--                       </div>-->
+<!--                   </div>-->
+<!--               </div>-->
+<!--           </div>-->
+<!--       </div>-->
+<!--    </div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <style>
+        img{
+            width:100%;
+            height:500px;
+        }
+        .card{
+            margin-left:50px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://kit.fontawesome.com/6de89423e0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+<center><h2 style="color:#ff57ee;font-weight:1000;font-family:symbol;">BABY HAMPER</h2></center>
+<!--         NAVBAR        -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="http://127.0.0.1:8000/myApp/index/"><i class="fa-sharp fa-solid fa-baby fa-3x"></i></a>
+<!--    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--      <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="http://127.0.0.1:8000/myApp/home/">Home</a>
+        </li>
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link text-secondary" href="#"><i class="fa-solid fa-eye fa-1x"></i></a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link text-secondary" href="#">wish list</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link text-secondary" href="#">my cart</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link text-secondary" href="#">Furniture</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link text-secondary" href="#">Toys</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item dropdown">-->
+<!--          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--            Dropdown-->
+<!--          </a>-->
+<!--          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--            <li><a class="dropdown-item" href="#">Action</a></li>-->
+<!--            <li><a class="dropdown-item" href="#">Another action</a></li>-->
+<!--            <li><hr class="dropdown-divider"></li>-->
+<!--            <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+<!--          </ul>-->
+<!--        </li>-->
+      </ul>
+      <form class="d-flex">
+<!--        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--        <button class="btn btn-outline-success" type="submit">Search</button>-->
+         <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">{{ username }}<i class="fa-sharp fa-solid fa-user fa-2x"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="http://127.0.0.1:8000/myApp/user_view_pdt/"><i class="fa-solid fa-eye fa-1x"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="http://127.0.0.1:8000/myApp/wishlist_display/"><i class="fa-sharp fa-solid fa-heart"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="http://127.0.0.1:8000/myApp/cart_display/"><i class="fa-solid fa-cart-shopping fa-1x"></i></a>
+        </li>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- end of NAVBAR -->
+
+<!--      CAROUSEL    1    -->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'ad8.jpg' %}" class="d-block w-100" alt="..." >
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'ad2.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'ad3.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+       <div class="carousel-item">
+      <img src="{% static 'ad11.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--    end of CAROUSEL   -->
+<marquee>
+<!--  CARD 1 -->
+<div class="row">
+    <div class="col-3">
+<div class="card" style="width: 15rem;height:18rem;">
+  <img src="{% static 'gd1.jpg' %}" height="200px" width="200px" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Upto 50% off</h5>
+    <p class="card-text">Save big on baby dress</p>
+    <a href="http://127.0.0.1:8000/myApp/user_view_pdt/" class="btn btn-secondary">VIEW</a>
+  </div>
+</div>
+    </div>
+<!--  end of CARD  -->
+<!--  CARD 2 -->
+    <div class="col-3">
+<div class="card" style="width: 15rem;height:18rem;">
+  <img src="{% static 'baby_pdts.jpg' %}" height="200px" width="200px" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Min. 4% off</h5>
+    <p class="card-text">Save big on baby dress</p>
+    <a href="http://127.0.0.1:8000/myApp/user_view_pdt/" class="btn btn-secondary">VIEW</a>
+  </div>
+</div>
+    </div>
+<!--  end of CARD  -->
+<!--  CARD 3 -->
+    <div class="col-3">
+<div class="card" style="width: 15rem;height:18rem;">
+  <img src="{% static 'gd2.jpg' %}" height="200px" width="200px" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">From Rs.200</h5>
+    <p class="card-text">Save big on baby dress</p>
+    <a href="http://127.0.0.1:8000/myApp/user_view_pdt/" class="btn btn-secondary">VIEW</a>
+  </div>
+</div>
+    </div>
+<!--  end of CARD  -->
+<!--  CARD 4 -->
+    <div class="col-3">
+<div class="card" style="width: 15rem;height:18rem;">
+  <img src="{% static 'baby_frntr.jpg' %}" height="200px" width="200px" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Upto 50% off</h5>
+    <p class="card-text">Save big on baby dress</p>
+    <a href="http://127.0.0.1:8000/myApp/user_view_pdt/" class="btn btn-secondary">VIEW</a>
+  </div>
+</div>
+    </div>
+</div>
+</div>
+<!--  end of CARD  -->
+</marquee>
+
+<!--      CAROUSEL    2    -->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'ad4.jpg' %}" class="d-block w-100" alt="..." >
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'ad10.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'ad14.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+       <div class="carousel-item">
+      <img src="{% static 'ad7.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--    end of CAROUSEL   -->
+</body>
+</html>

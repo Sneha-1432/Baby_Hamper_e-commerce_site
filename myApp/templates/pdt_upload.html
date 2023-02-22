@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(himalaya.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 900px;
+        }
+        h1{
+            color: black;
+            text-align: center;
+            font-style: italic;
+            padding: 20px;
+        }
+        .upld{
+            width: 40%;
+            margin: auto;
+            background-color: rgb(0,0,0,0.4);
+        }
+<!--        #reg{-->
+
+<!--        }-->
+        label{
+            color: white;
+            font-size: 20px;
+            font-style: italic;
+        }
+<!--        #sname{-->
+<!--            width: 300px;-->
+<!--            outline: 0;-->
+<!--            padding: 5px;-->
+<!--            border: 3px groove;-->
+<!--        }-->
+    </style>
+    <meta charset="UTF-8">
+    <title>upload product</title>
+</head>
+<body>
+<div class="upld" id="upld">
+    <form method="post" enctype="multipart/form-data">{% csrf_token %}
+        <h1>Upload Product</h1>
+        <center>
+        <label>Product Name</label>
+        <input type="text" name="pname" id="a"><br><br>
+        <label>Product Price</label>
+        <input type="number" name="price" id="b"><br><br>
+        <label>Product Image</label>
+        <input type="file" name="pdtimg" id="c"><br><br>
+        <label>Description</label>
+        <input type="text" name="desc" id="d"><br><br>
+        <button type="submit">UPLOAD</button>
+        </center>
+    </form>
+</div>
+</body>
+</html>

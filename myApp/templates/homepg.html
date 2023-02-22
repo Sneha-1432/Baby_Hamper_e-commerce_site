@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .full-page{
+            height:100%;
+            width:100%;
+            background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("/static/home_img3.jpg");
+            background-position:center;
+            background-size:cover;
+            position:absolute;
+        }
+        .navbar{
+            display:flex;
+            align-items:center;
+            padding:20px;
+            padding-left:50px;
+            padding-right:30px;
+            padding-top:50px;
+        }
+        nav{
+            flex:1;
+            text-align:right;
+        }
+        nav ul{
+            display:inline-block;
+            list-style:none;
+        }
+        nav ul li{
+            display:inline-block;
+            margin-right:70px;
+        }
+        nav ul li a{
+            text-decoration:none;
+            font-size:15px;
+            color:white;
+            font-family:sans-serif;
+        }
+        .nav-item a{
+            text-decoration:none;
+            font-size:15px;
+            color:white;
+            font-family:sans-serif;
+        }
+        .nav-item ul li a{
+            text-decoration:none;
+            font-size:15px;
+            color:brown;
+            font-family:sans-serif;
+        }
+        .nav-item a:hover{
+            color:cyan;
+        }
+         .nav-item ul li a:hover{
+            color:black;
+         }
+         nav ul li a:hover{
+            color:aqua;
+        }
+        a{
+            text-decoration:none;
+            font-size:28px;
+        }
+        h2{
+            margin-left:70px;
+            margin-top:500px;
+            color:white;
+            font-family:Traditional-Arabic"
+        }
+        .fa-sharp{
+            color:white;
+        }
+
+    </style>
+    {% load static %}
+    <script src="https://kit.fontawesome.com/6de89423e0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+</head>
+<body>
+    <div class="full-page">
+        <!--            NAVBAR    -->
+        <div class="navbar">
+             <div>
+                 <li></li><a href="http://127.0.0.1:8000/myApp/index/"><i class="fa-sharp fa-solid fa-baby fa-3x"></i></a>
+             </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="http://127.0.0.1:8000/myApp/home/">HOME</a></li>
+<!--                    <li><a href="http://127.0.0.1:8000/myApp/shop_login/">LOGIN</a></li>-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         LOGIN
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="http://127.0.0.1:8000/admin/">ADMIN LOGIN</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:8000/myApp/shop_login/">SHOP LOGIN</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:8000/myApp/customer_login/">USER LOGIN</a></li>
+                        </ul>
+                    </li>
+<!--                    <li><a href="#">REGISTER</a></li>-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         REGISTER
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="http://127.0.0.1:8000/myApp/shop_login/">SHOP REGISTRATION</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:8000/myApp/customer_login/">USER REGISTRATION</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+<!--        end of NAVBAR   -->
+        <h1 style="color:brown;font-family:Comic Sans MS;font-weight:1000;margin-left:70px;margin-top:100px;">BABY HAMPER</h1><br><br>
+        <h2>Shop & sell kids'<br>
+        Resale Fashion</h2>
+        <p style="color:white; margin-left:70px;">Welcome to BabyHamper! Support other parents by shopping the largest resale<br>
+        marketplace to buy and sell kids' new fashion and essentials...</p>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<!--&lt;!&ndash; home page &ndash;&gt;-->
+<!--<!DOCTYPE html>-->
+<!--{% load static %}-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <style>-->
+<!--        .container-fluid{-->
+<!--            background-color:black;-->
+<!--            color: white;-->
+<!--        }-->
+<!--        .fa-solid{-->
+<!--            padding-top: 11px;-->
+<!--        }-->
+<!--        .fa-sharp{-->
+<!--            padding-left: 50px;-->
+<!--        }-->
+<!--        img{-->
+<!--          height:"10px";-->
+<!--            width: "200px";-->
+<!--        }-->
+<!--       #ca  rd_div */body{-->
+<!--           background-color: #F4D03F;-->
+<!--          background-image: linear-gradient(346deg, #F4D03F 0%, #3716a0 100%);-->
+<!--          background-repeat: no-repeat;-->
+<!--        }-->
+<!--        img:hover{-->
+<!--          height: 300px;-->
+<!--          width: 250px;-->
+<!--        }-->
+<!--         #img1{-->
+<!--            height:"10px";-->
+<!--            width: "200px";-->
+<!--        }-->
+<!--        #img3{-->
+<!--          height:"10px";-->
+<!--            width: "200px";-->
+<!--        }-->
+
+<!--    </style>-->
+<!--    <script src="https://kit.fontawesome.com/6de89423e0.js" crossorigin="anonymous"></script>-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Home Page</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash; nav bar &ndash;&gt;-->
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--    <div class="container-fluid">-->
+<!--        <a class="navbar-brand text-white" href="#"><i class="fa-sharp fa-solid fa-baby fa-2x"></i></a>-->
+<!--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--            <span class="navbar-toggler-icon"></span>-->
+<!--        </button>-->
+<!--        <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--            <ul class="navbar-nav me-auto mb-2 mb-lg-0">-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link text-white" href="#">Login</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link text-white" href="#">Register</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link text-white" href="#">About</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link text-white" href="#">Contact us</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--            <form class="d-flex">-->
+<!--                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--                <i class="fa-solid fa-magnifying-glass"></i>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
+
+
+
+
+<!--&lt;!&ndash; Carousel &ndash;&gt;-->
+<!--<div>-->
+
+
+<!--    &lt;!&ndash; row 1 &ndash;&gt;-->
+<!--    <div class="row">-->
+<!--        <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">-->
+<!--            <div class="carousel-indicators">-->
+<!--                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>-->
+<!--                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>-->
+<!--                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
+<!--            </div>-->
+<!--            <div class="carousel-inner">-->
+<!--                <div class="carousel-item active">-->
+<!--                    <center><img src="{% static 'istk_ad2.jpg' %}" id="img11" class="d-block" style="height: 20rem; width: 50rem;" alt="..."></center>-->
+<!--                </div>-->
+<!--                <div class="carousel-item">-->
+<!--                    <center><img src="{% static dress_ad2.jpg %}" id="img22" class="d-block" style="height: 20rem; width: 50rem;"alt="..."></center>-->
+<!--                </div>-->
+<!--                <div class="carousel-item">-->
+<!--                    <center><img src="baby_sleep.webp" id="img33" class="d-block" style="height: 20rem; width: 50rem;" alt="..."></center>-->
+<!--                </div>-->
+
+<!--            </div>-->
+<!--            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">-->
+<!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--                <span class="visually-hidden">Previous</span>-->
+<!--            </button>-->
+<!--            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">-->
+<!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--                <span class="visually-hidden">Next</span>-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+
+<!--    &lt;!&ndash; ICONS &ndash;&gt;-->
+<!--    &lt;!&ndash; <div id="icons" class="row">-->
+
+<!--    </div> &ndash;&gt;-->
+
+
+
+
+<!--    &lt;!&ndash; CARDS &ndash;&gt;-->
+<!--    <div class="container" id="card_div">-->
+<!--        <div class="row">-->
+<!--            <div class="row text-dark p-2 text-center"><strong><center>Brands Of The day</center> </strong> </div>-->
+<!--            <div class="row bg-dark p-2 text-center text-white"><strong><center>Big brands Big savings</center> </strong> </div>-->
+
+<!--            &lt;!&ndash; first card &ndash;&gt;-->
+<!--            <div class="col-3">-->
+<!--                <div class="card" style="width: 12rem; height: 21rem;" id="cl_div1">-->
+<!--                    <img src="{% static 'baby_boy_drs_1.jpg' %}" class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">iPhone 12</h5>-->
+<!--                        <p class="card-text">110000</p>-->
+<!--                        <a href="#" class="btn btn-primary">Add to Cart</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; second card &ndash;&gt;-->
+<!--            <div class="col-3">-->
+<!--                <div class="card" style="width: 12rem;" id="cl_div2">-->
+<!--                    <img src="baby_gl_dress_2.jpg" class="card-img-top pb-5 pt-2" style="height: 12rem;" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">iPhone13 Pro</h5>-->
+<!--                        <p class="card-text">113000</p>-->
+<!--                        <a href="#" class="btn btn-primary" id="btn2">Add to Cart</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; third card &ndash;&gt;-->
+<!--            <div class="col-3" >-->
+<!--                <div class="card" style="width: 12rem;" id="cl_div3">-->
+<!--                    <img src="baby_boy_drs_4.jpg" class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">iPhone 10s Max</h5>-->
+<!--                        <p class="card-text">60000</p>-->
+<!--                        <a href="#" class="btn btn-primary">Add to Cart</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; fourth card &ndash;&gt;-->
+<!--            <div class="col-3">-->
+<!--                <div class="card" style="width: 12rem;" id="cl_div4">-->
+<!--                    <img src="baby_boy_drs_1.jpg" class="card-img-top" style="height: 12rem;" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">iPhone12</h5>-->
+<!--                        <p class="card-text">98000</p>-->
+<!--                        <a href="#" class="btn btn-primary">Add to Cart</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--        </div>  &lt;!&ndash; div of row&ndash;&gt;-->
+<!--    </div>-->
+
+
+
+
+
+<!--    &lt;!&ndash; Carousel -&#45;&#45;  2   &ndash;&gt;-->
+<!--    <div>-->
+
+
+<!--        &lt;!&ndash; row 1 &ndash;&gt;-->
+<!--        <div class="row">-->
+<!--            <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">-->
+<!--                <div class="carousel-indicators">-->
+<!--                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>-->
+<!--                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>-->
+<!--                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
+<!--                </div>-->
+<!--                <div class="carousel-inner">-->
+<!--                    <div class="carousel-item active">-->
+<!--                        <center><img src="baby_pdts.jpeg" id="img1" class="d-block" style="height: 20rem; width: 50rem;" alt="..."></center>-->
+<!--                    </div>-->
+<!--                    <div class="carousel-item">-->
+<!--                        <center><img src="download.jpg" id="img2" class="d-block" style="height: 20rem; width: 50rem;"alt="..."></center>-->
+<!--                    </div>-->
+<!--                    <div class="carousel-item">-->
+<!--                        <center><img src="himalaya.jpeg" id="img3" class="d-block" style="height: 20rem; width: 50rem;" alt="..."></center>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">-->
+<!--                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--                    <span class="visually-hidden">Previous</span>-->
+<!--                </button>-->
+<!--                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">-->
+<!--                    <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--                    <span class="visually-hidden">Next</span>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->

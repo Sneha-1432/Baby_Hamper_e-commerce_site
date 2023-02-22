@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Edit product</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">{% csrf_token %}
+        <input type="text" name="pname" value="{{ a.pnm }}"><br>
+        <input type="number" name="price" value="{{ a.prc }}"><br>
+        <img src="{% static im %}" width="300px" height="300px">
+        <input type="file" name="image"><br>
+        <input type="text" name="desc" value="{{ a.dsc }}"><br>
+        <button type="submit">UPDATE</button>
+    </form>
+</body>
+</html>

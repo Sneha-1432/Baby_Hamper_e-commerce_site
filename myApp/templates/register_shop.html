@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url('{% static "istk_ad2.jpg" %}')
+            background-repeat: no-repeat;
+            background-size: 100% 900px;
+        }
+        h1{
+            color: black;
+            text-align: center;
+            font-style: italic;
+            padding: 20px;
+        }
+        .reg{
+            width: 40%;
+            margin: auto;
+            background-color: rgb(0,0,0,0.4);
+        }
+        #reg{
+
+        }
+        label{
+            color: white;
+            font-size: 20px;
+            font-style: italic;
+        }
+        #sname{
+            width: 300px;
+            outline: 0;
+            padding: 5px;
+            border: 3px groove;
+        }
+        #gd{
+            color: white;
+            font-size: 20px;
+            font-style: italic;
+        }
+        #ch{
+            color: white;
+            font-size: 20px;
+            font-style: italic;
+        }
+        #sub{
+
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Register Here</h1>
+    <div class="reg">
+        <form id="regr" method="post">{%  csrf_token %}
+            <label for="">Shop Name</label><br>
+            <input type="text" name="sname" id="sname" placeholder="Shop Name"><br><br>
+            <label for="">Shop ID</label><br>
+            <input type="number" name="sid" id="sid" placeholder="Shop ID"><br><br>
+            <label for="">Address</label><br>
+            <textarea name="sadrs" id="sadrs" placeholder="Shop NAddress"></textarea><br><br>
+            <label for="">Email ID</label><br>
+            <input type="email" name="semail" id="semail" placeholder="Shop Email ID"><br><br>
+            <label for="">Phone no</label><br>
+            <input type="number" name="sphn" id="sphn" placeholder="Contact Number"><br><br>
+            <label for="">Password</label><br>
+            <input type="password" name="spswd" id="spswd" placeholder="Enter your Password"><br><br>
+            <label for="">Confirm Password</label><br>
+            <input type="password" name="cpswd" id="cpswd" placeholder="Confirm your Password"><br><br>
+<!--            <label for="">Gender</label><br>-->
+<!--            <input type="radio" name="" id="gd">-->
+<!--            <span id="gd1">Male</span>-->
+<!--            <input type="radio" id="gd2">-->
+<!--            <span id="gd3">Female</span><br><br>-->
+<!--            <input type="checkbox" id="ch1">-->
+<!--            <span id="ch">I agree all the terms and conditions</span><br><br>-->
+            <button type="submit" id="sub">REGISTER</button>
+        </form>
+
+    </div>
+</body>
+</html>
